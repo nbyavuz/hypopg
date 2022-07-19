@@ -5,7 +5,7 @@ TESTS        = $(wildcard test/sql/*.sql)
 # More test can be added later, after including pgxs
 REGRESS      = hypopg
 
-REGRESS_OPTS = --inputdir=test
+REGRESS_OPTS = --temp-instance=./tmp_check --inputdir=test
 
 PG_CONFIG ?= pg_config
 
